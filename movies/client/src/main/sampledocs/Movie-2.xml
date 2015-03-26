@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Inteligencia Artificial. -->
+
+<movie xmlns="http://ws.udc.es/movies/xml"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://ws.udc.es/movies/xml Movies.xsd">
+       
+    <!--  Remember to specify a valid identifier for updating.
+    <identifier>-1</identifier>
+    -->
+    <title>Inteligencia Artificial</title>
+    <runtime>148</runtime> 
+    <releaseDate day="21" month="9" year="2001"/>
+    <director>Steven Spielberg</director>
+    <actor>Haley Joel Osment</actor>
+    <actor>Jude Law</actor>
+    <actor>William Hurt</actor>
+    <actor>Frances O'Connor</actor>
+    <genre>DRA</genre>
+    <genre>SFI</genre>
+    <synopsis>
+        En un futuro no muy lejano, después del deshielo de los polos debido al cambio climático (y que
+        causó la desaparición de Amsterdam, Venecia y Nueva York, ahora ciudades fantasma bajo las
+        aguas), el profesor Hobby anuncia a sus alumnos su firme intención de construir el primer niño
+        robot capaz de amar y de ser amado.  Mientras los Swinton, Monica y Henry, visitan a su hijo
+        Martin en el Instituto Criogénico, donde éste yace en estado de coma. Con el fin de que Monica
+        se aclimate a una nueva vida sin su hijo, Henry compra a David, el robot creado por Hobby que,
+        en cierta forma pretende sustituir a Martin. Tras unos momentos de duda, Monica acepta programar
+        a David para que se convierta en su nuevo hijo, un ser que no come, no duerme, no crece, no se
+        enfada... sólo espera amar y ser amado. Mónica llega a darle el juguete favorito de Martin,
+        Teddy, un oso mecánico con la capacidad de razonar y moverse por si mismo.
+    </synopsis>
+    
+</movie>

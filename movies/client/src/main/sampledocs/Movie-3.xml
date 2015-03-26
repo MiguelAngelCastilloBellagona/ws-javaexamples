@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- La Maldición del Escorpión de Jade. -->
+
+<movie xmlns="http://ws.udc.es/movies/xml"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://ws.udc.es/movies/xml Movies.xsd">
+       
+    <!--  Remember to specify a valid identifier for updating.
+    <identifier>3</identifier>
+	-->
+    <title>La Maldición del Escorpión de Jade</title>
+    <runtime>103</runtime> 
+    <releaseDate day="19" month="10" year="2001"/>
+    <director>Woody Allen</director>
+    <actor>Woody Allen</actor>
+    <actor>Helen Hunt</actor>
+    <actor>Dan Aykroyd</actor>
+    <actor>Elizabeth Berkley</actor>
+    <actor>Charlize Theron</actor>
+    <genre>COM</genre>
+    <synopsis>
+        Woody Allen encarna a CW Briggs, el rey de los investigadores de seguros de Nueva York en 1940
+        --o cuanto menos eso es lo que no cesa de decirle a la nueva experta en eficiencia de la empresa,
+        Betty Ann Fitzgerald (Helen Hunt)--. Briggs hace alarde de ser capaz de arruinar cualquier treta
+        de seguros penetrando en la mente del malhechor, pero ahora, debido a los poderes hipnóticos del
+        "Escorpión de Jade", es la mente de un malhechor la que penetra en Briggs.
+    </synopsis>
+    
+</movie>

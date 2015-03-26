@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://movies.ws.adoo.udc.es/" xmlns:tns="http://movies.ws.adoo.udc.es/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="MovieException" nillable="true" type="tns:movieExceptionInfo"/>
+
+  <xs:element name="MovieNotFoundException" nillable="true" type="tns:movieNotFoundExceptionInfo"/>
+
+  <xs:element name="addMovie" type="tns:addMovie"/>
+
+  <xs:element name="addMovieResponse" type="tns:addMovieResponse"/>
+
+  <xs:element name="findMoviesByReleaseDate" type="tns:findMoviesByReleaseDate"/>
+
+  <xs:element name="findMoviesByReleaseDateResponse" type="tns:findMoviesByReleaseDateResponse"/>
+
+  <xs:element name="removeMovie" type="tns:removeMovie"/>
+
+  <xs:element name="removeMovieResponse" type="tns:removeMovieResponse"/>
+
+  <xs:element name="updateMovie" type="tns:updateMovie"/>
+
+  <xs:element name="updateMovieResponse" type="tns:updateMovieResponse"/>
+
+  <xs:complexType name="updateMovie">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:movieInformationWTO" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="movieInformationWTO">
+    <xs:sequence>
+      <xs:element name="actorNames" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="directorNames" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="genres" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="identifier" type="xs:long" minOccurs="0"/>
+      <xs:element name="releaseDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="runtime" type="xs:short"/>
+      <xs:element name="synopsis" type="xs:string" minOccurs="0"/>
+      <xs:element name="title" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateMovieResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="movieNotFoundExceptionInfo">
+    <xs:sequence>
+      <xs:element name="identifier" type="xs:long" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="movieExceptionInfo">
+    <xs:sequence>
+      <xs:element name="movie" type="tns:movieInformationWTO" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="removeMovie">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:long" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="removeMovieResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="findMoviesByReleaseDate">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:dateTime" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findMoviesByReleaseDateResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:movieInformationWTO" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addMovie">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:movieInformationWTO" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addMovieResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

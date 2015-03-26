@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Los Otros. -->
+
+<movie xmlns="http://ws.udc.es/movies/xml"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://ws.udc.es/movies/xml Movies.xsd">
+       
+    <!--  Remember to specify a valid identifier for updating.
+    <identifier>-1</identifier>
+    -->
+    <title>Los Otros</title>
+    <runtime>109</runtime>
+    <releaseDate day="7" month="9" year="2001"/>
+    <director>Alejandro Amenábar</director>
+    <actor>Nicole Kidman</actor>
+    <actor>Fionnula Flanagan</actor>
+    <actor>Christopher Eccleston</actor>
+    <actor>Elaine Cassidy</actor>
+    <actor>James Bentley</actor>
+    <actor>Alakina Mann</actor>
+    <genre>THR</genre>
+    <genre>HOR</genre>
+    <synopsis>
+        Nos encontramos en la isla de Jersey, Canal de la Mancha, en 1945. Grace (Nicole Kidman), 
+        vive en una mansión victoriana con sus dos hijos pequeños, Anne (Alakina Mann) y Nicholas (
+        James Bentley). Viven sin perder la esperanza el regreso de su marido y padre, que se fue a 
+        la guerra y aún no ha vuelto, a pesar de que ésta ya ha acabado. Respondiendo a un anuncio que 
+        solicita los servicios de una limpiadora, una mujer que cuide a los niños y un jardinero, aparecen 
+        en escena tres misteriosos personajes: Mrs. Bertha (Fionnula Flanagan), Mr. Tuttle (Eric Sykes) y 
+        una chica muda que responde al nombre de Lydia (Elaine Cassidy).  Pese a la insistencia de Grace 
+        por enseñarles la casa, posteriormente descubre que se la conocen como la palma de su mano, porque 
+        ya habían trabajado allí anteriormente. De todas formas tienen que tener nuevas normas en cuenta: 
+        "No se podrá abrir ninguna puerta sin haber cerrado la anterior". Para ello Grace les entrega un 
+        llavero de quince llaves para las cincuenta puertas que hay en la casa. Además todas las cortinas 
+        deben estar echadas, no puede entrar en la casa un solo rayo de luz. La razón está en los niños, 
+        son fotosensibles y la luz les puede provocar llagas e incluso la muerte. La vida cotidiana de la 
+        casa se mantiene entre el estudio de los niños, educados en severas normas religiosas, y las labores 
+        de Grace, temerosa de que cualquier sobresalto pueda afectar a sus hijos. Pero los niños, sobre todo 
+        Anne, que es menos inocente que su hermano, insisten en que hay fantasmas en la casa. Primero Anne 
+        asusta a Nicholas con sus historias, pero más tarde comenzará a asustar también a su madre, que se 
+        desahoga con Mrs. Bertha. ¿Qué misterio esconde esta casa?.
+    </synopsis>
+    
+</movie>

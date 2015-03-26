@@ -1,0 +1,37 @@
+<assembly>
+    <id>src</id>
+    <formats>
+        <format>zip</format>
+        <format>tar.gz</format>
+        <format>tar.bz2</format>
+    </formats>
+    <fileSets>
+        <fileSet>
+            <includes>
+                <include>**/*</include>
+            </includes>
+            <excludes>
+                <exclude>**/.project</exclude>
+                <exclude>**/.classpath</exclude>
+                <exclude>**/.gwt-tmp/**</exclude>
+                <exclude>**/*.iml</exclude>
+                <exclude>**/target/**</exclude>
+                <exclude>**/bpel/**</exclude>
+                <exclude>**/bpelclient/**</exclude>
+                <exclude>**/client/**/wsdl/**</exclude>
+                <exclude>**/database/**</exclude>
+                <exclude>**/.settings/**</exclude>
+                <exclude>**/work/**</exclude>
+                <exclude>**/.tomcatplugin</exclude>
+                <exclude>**/*.log</exclude>
+                <exclude>**/*~</exclude>
+                <exclude>**/nbactions.xml</exclude>
+                <exclude>**/nb-configuration.xml</exclude>
+                <exclude>**/profiles.xml</exclude>
+                <exclude>rest/**</exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
+</assembly>
+
+

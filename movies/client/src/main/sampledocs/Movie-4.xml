@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Amelie. -->
+
+<movie xmlns="http://ws.udc.es/movies/xml"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://ws.udc.es/movies/xml Movies.xsd">
+
+    <!--  Remember to specify a valid identifier for updating.
+    <identifier>-1</identifier>
+	-->
+    <title>Amelie</title>
+    <runtime>120</runtime> 
+    <releaseDate day="19" month="10" year="2001"/>
+    <director>Jean-Pierre Jeunet</director>
+    <actor>Audrey Tautou</actor>
+    <actor>Mathieu Kassovitz</actor>
+    <actor>Rufus</actor>
+    <actor>Yolande Moreau</actor>
+    <actor>Artus de Penguern</actor>
+    <actor>Dominique Pinon</actor>
+    <genre>COM</genre>
+    <genre>ROM</genre>
+    <synopsis>
+        Amelie no es una chica como las demás. Ha visto a su pez de colores deslizarse hacia las
+        alcantarillas, a su madre morir en la plaza de Notre-Dame y a su padre dedicar todo su afecto a
+        un gnomo de jardín. Creció y se convirtió en camarera en un bar de Montmartre cuya propietaria
+        es una antigua jinete circense. La vida de Amelie es sencilla: le gusta tirar piedras al Sena,
+        observar a la gente y dejar volar su imaginación. De repente, a sus veintidós años, Amelie
+        descubre su objetivo en la vida: arreglar la vida de los demás. Inventa toda clase de
+        estrategias para intervenir, sin que se den cuenta, en la existencia de varias personas de su
+        entorno. Entre ellas está su portera que pasa los días bebiendo vino de Oporto; Georgette; una
+        estanquera hipocondríaca; o el "hombre de cristal", un vecino que sólo ve el mundo a través de
+        la reproducción de un cuadro de Renoir. La misión de Amelie se ve trastocada por la llegada de
+        un chico extraño y muy peculiar: Nino Quincampoix. Tiene dos trabajos: de fantasma en un túnel
+        del terror y otro en un sex-shop. Colecciona las fotos abandonadas en los fotomatones y busca
+        desesperadamente identificar al hombre que aparece en una de ellas una y otra vez. Sin embargo,
+        esta búsqueda se ve interrumpida por su encuentro con Amelie. A ella le fascina, pero prefiere
+        jugar al escondite con él antes que descubrirse de verdad.
+    </synopsis>
+    
+</movie>

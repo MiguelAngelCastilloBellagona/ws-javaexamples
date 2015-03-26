@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.adoo.udc.es/" xmlns:tns="http://ws.adoo.udc.es/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="IncorrectTickerSymbolException" nillable="true" type="tns:incorrectTickerSymbolExceptionInfo"/>
+
+  <xs:element name="getLastTradePrices" type="tns:getLastTradePrices"/>
+
+  <xs:element name="getLastTradePricesResponse" type="tns:getLastTradePricesResponse"/>
+
+  <xs:complexType name="getLastTradePrices">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLastTradePricesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:tradePrice" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tradePrice">
+    <xs:sequence>
+      <xs:element name="elapsedSeconds" type="xs:int"/>
+      <xs:element name="price" type="xs:double"/>
+      <xs:element name="tickerSymbol" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="incorrectTickerSymbolExceptionInfo">
+    <xs:sequence>
+      <xs:element name="incorrectTickerSymbol" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
