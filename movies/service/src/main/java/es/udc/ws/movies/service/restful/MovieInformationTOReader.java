@@ -15,24 +15,21 @@ import javax.ws.rs.ext.Provider;
 
 @Consumes("application/xml")
 @Provider
-public class MovieInformationTOReader implements MessageBodyReader<MovieInformationTO>{
+public class MovieInformationTOReader implements
+		MessageBodyReader<MovieInformationTO> {
 
-    @Override
-    public boolean isReadable(Class<?> type, 
-                              Type type1, 
-                              Annotation[] antns, 
-                              MediaType mt) {
-        return type == MovieInformationTO.class;
-    }
+	@Override
+	public boolean isReadable(Class<?> type, Type type1, Annotation[] antns,
+			MediaType mt) {
+		return type == MovieInformationTO.class;
+	}
 
-    @Override
-    public MovieInformationTO readFrom(Class<MovieInformationTO> type, 
-                                    Type type1, Annotation[] antns, 
-                                    MediaType mt, 
-                                    MultivaluedMap<String, String> mm, 
-                                    InputStream in) 
-            throws IOException, WebApplicationException {
-        return MovieXMLConversor.toMovieInformation(in);
-    }
+	@Override
+	public MovieInformationTO readFrom(Class<MovieInformationTO> type,
+			Type type1, Annotation[] antns, MediaType mt,
+			MultivaluedMap<String, String> mm, InputStream in)
+			throws IOException, WebApplicationException {
+		return MovieXMLConversor.toMovieInformation(in);
+	}
 
 }

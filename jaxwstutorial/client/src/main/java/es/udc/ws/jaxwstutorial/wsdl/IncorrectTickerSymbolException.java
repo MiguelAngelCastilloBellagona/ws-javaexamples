@@ -10,7 +10,6 @@ import javax.xml.ws.WebFault;
  * Generated source version: 2.1
  * 
  */
-@SuppressWarnings("serial")
 @WebFault(name = "IncorrectTickerSymbolException", targetNamespace = "http://ws.adoo.udc.es/")
 public class IncorrectTickerSymbolException
     extends Exception

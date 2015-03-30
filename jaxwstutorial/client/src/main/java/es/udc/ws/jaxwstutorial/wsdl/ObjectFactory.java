@@ -36,11 +36,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TradePrice }
+     * Create an instance of {@link GetLastTradePricesResponse }
      * 
      */
-    public TradePrice createTradePrice() {
-        return new TradePrice();
+    public GetLastTradePricesResponse createGetLastTradePricesResponse() {
+        return new GetLastTradePricesResponse();
     }
 
     /**
@@ -60,11 +60,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetLastTradePricesResponse }
+     * Create an instance of {@link TradePrice }
      * 
      */
-    public GetLastTradePricesResponse createGetLastTradePricesResponse() {
-        return new GetLastTradePricesResponse();
+    public TradePrice createTradePrice() {
+        return new TradePrice();
     }
 
     /**

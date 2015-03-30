@@ -29,6 +29,20 @@ public interface MovieInformationProvider {
      * 
      * @param arg0
      * @throws MovieNotFoundException
+     */
+    @WebMethod
+    @RequestWrapper(localName = "removeMovie", targetNamespace = "http://movies.ws.adoo.udc.es/", className = "es.udc.ws.movies.service.jaxws.wsdl.RemoveMovie")
+    @ResponseWrapper(localName = "removeMovieResponse", targetNamespace = "http://movies.ws.adoo.udc.es/", className = "es.udc.ws.movies.service.jaxws.wsdl.RemoveMovieResponse")
+    public void removeMovie(
+        @WebParam(name = "arg0", targetNamespace = "")
+        Long arg0)
+        throws MovieNotFoundException
+    ;
+
+    /**
+     * 
+     * @param arg0
+     * @throws MovieNotFoundException
      * @throws MovieException
      */
     @WebMethod
@@ -38,20 +52,6 @@ public interface MovieInformationProvider {
         @WebParam(name = "arg0", targetNamespace = "")
         MovieInformationWTO arg0)
         throws MovieException, MovieNotFoundException
-    ;
-
-    /**
-     * 
-     * @param arg0
-     * @throws MovieNotFoundException
-     */
-    @WebMethod
-    @RequestWrapper(localName = "removeMovie", targetNamespace = "http://movies.ws.adoo.udc.es/", className = "es.udc.ws.movies.service.jaxws.wsdl.RemoveMovie")
-    @ResponseWrapper(localName = "removeMovieResponse", targetNamespace = "http://movies.ws.adoo.udc.es/", className = "es.udc.ws.movies.service.jaxws.wsdl.RemoveMovieResponse")
-    public void removeMovie(
-        @WebParam(name = "arg0", targetNamespace = "")
-        Long arg0)
-        throws MovieNotFoundException
     ;
 
     /**

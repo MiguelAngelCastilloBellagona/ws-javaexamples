@@ -10,7 +10,6 @@ import javax.xml.ws.WebFault;
  * Generated source version: 2.1
  * 
  */
-@SuppressWarnings("serial")
 @WebFault(name = "MovieNotFoundException", targetNamespace = "http://movies.ws.adoo.udc.es/")
 public class MovieNotFoundException
     extends Exception
