@@ -43,11 +43,27 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link MovieInformationWTO }
+     * 
+     */
+    public MovieInformationWTO createMovieInformationWTO() {
+        return new MovieInformationWTO();
+    }
+
+    /**
      * Create an instance of {@link FindMoviesByReleaseDate }
      * 
      */
     public FindMoviesByReleaseDate createFindMoviesByReleaseDate() {
         return new FindMoviesByReleaseDate();
+    }
+
+    /**
+     * Create an instance of {@link MovieNotFoundExceptionInfo }
+     * 
+     */
+    public MovieNotFoundExceptionInfo createMovieNotFoundExceptionInfo() {
+        return new MovieNotFoundExceptionInfo();
     }
 
     /**
@@ -59,11 +75,27 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link UpdateMovieResponse }
+     * 
+     */
+    public UpdateMovieResponse createUpdateMovieResponse() {
+        return new UpdateMovieResponse();
+    }
+
+    /**
      * Create an instance of {@link MovieExceptionInfo }
      * 
      */
     public MovieExceptionInfo createMovieExceptionInfo() {
         return new MovieExceptionInfo();
+    }
+
+    /**
+     * Create an instance of {@link RemoveMovieResponse }
+     * 
+     */
+    public RemoveMovieResponse createRemoveMovieResponse() {
+        return new RemoveMovieResponse();
     }
 
     /**
@@ -83,43 +115,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MovieInformationWTO }
-     * 
-     */
-    public MovieInformationWTO createMovieInformationWTO() {
-        return new MovieInformationWTO();
-    }
-
-    /**
-     * Create an instance of {@link UpdateMovieResponse }
-     * 
-     */
-    public UpdateMovieResponse createUpdateMovieResponse() {
-        return new UpdateMovieResponse();
-    }
-
-    /**
-     * Create an instance of {@link RemoveMovieResponse }
-     * 
-     */
-    public RemoveMovieResponse createRemoveMovieResponse() {
-        return new RemoveMovieResponse();
-    }
-
-    /**
      * Create an instance of {@link UpdateMovie }
      * 
      */
     public UpdateMovie createUpdateMovie() {
         return new UpdateMovie();
-    }
-
-    /**
-     * Create an instance of {@link MovieNotFoundExceptionInfo }
-     * 
-     */
-    public MovieNotFoundExceptionInfo createMovieNotFoundExceptionInfo() {
-        return new MovieNotFoundExceptionInfo();
     }
 
     /**

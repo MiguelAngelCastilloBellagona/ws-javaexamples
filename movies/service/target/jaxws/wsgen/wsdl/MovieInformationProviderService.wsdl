@@ -18,17 +18,17 @@
   <message name="MovieException">
     <part name="fault" element="tns:MovieException"/>
   </message>
-  <message name="removeMovie">
-    <part name="parameters" element="tns:removeMovie"/>
-  </message>
-  <message name="removeMovieResponse">
-    <part name="parameters" element="tns:removeMovieResponse"/>
-  </message>
   <message name="addMovie">
     <part name="parameters" element="tns:addMovie"/>
   </message>
   <message name="addMovieResponse">
     <part name="parameters" element="tns:addMovieResponse"/>
+  </message>
+  <message name="removeMovie">
+    <part name="parameters" element="tns:removeMovie"/>
+  </message>
+  <message name="removeMovieResponse">
+    <part name="parameters" element="tns:removeMovieResponse"/>
   </message>
   <message name="findMoviesByReleaseDate">
     <part name="parameters" element="tns:findMoviesByReleaseDate"/>
@@ -43,15 +43,15 @@
       <fault message="tns:MovieNotFoundException" name="MovieNotFoundException"/>
       <fault message="tns:MovieException" name="MovieException"/>
     </operation>
-    <operation name="removeMovie">
-      <input message="tns:removeMovie"/>
-      <output message="tns:removeMovieResponse"/>
-      <fault message="tns:MovieNotFoundException" name="MovieNotFoundException"/>
-    </operation>
     <operation name="addMovie">
       <input message="tns:addMovie"/>
       <output message="tns:addMovieResponse"/>
       <fault message="tns:MovieException" name="MovieException"/>
+    </operation>
+    <operation name="removeMovie">
+      <input message="tns:removeMovie"/>
+      <output message="tns:removeMovieResponse"/>
+      <fault message="tns:MovieNotFoundException" name="MovieNotFoundException"/>
     </operation>
     <operation name="findMoviesByReleaseDate">
       <input message="tns:findMoviesByReleaseDate"/>
@@ -75,18 +75,6 @@
         <soap:fault name="MovieException" use="literal"/>
       </fault>
     </operation>
-    <operation name="removeMovie">
-      <soap:operation soapAction=""/>
-      <input>
-        <soap:body use="literal"/>
-      </input>
-      <output>
-        <soap:body use="literal"/>
-      </output>
-      <fault name="MovieNotFoundException">
-        <soap:fault name="MovieNotFoundException" use="literal"/>
-      </fault>
-    </operation>
     <operation name="addMovie">
       <soap:operation soapAction=""/>
       <input>
@@ -97,6 +85,18 @@
       </output>
       <fault name="MovieException">
         <soap:fault name="MovieException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="removeMovie">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="MovieNotFoundException">
+        <soap:fault name="MovieNotFoundException" use="literal"/>
       </fault>
     </operation>
     <operation name="findMoviesByReleaseDate">

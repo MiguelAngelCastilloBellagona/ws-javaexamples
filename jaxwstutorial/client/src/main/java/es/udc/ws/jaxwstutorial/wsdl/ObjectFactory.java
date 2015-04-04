@@ -36,14 +36,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetLastTradePricesResponse }
-     * 
-     */
-    public GetLastTradePricesResponse createGetLastTradePricesResponse() {
-        return new GetLastTradePricesResponse();
-    }
-
-    /**
      * Create an instance of {@link IncorrectTickerSymbolExceptionInfo }
      * 
      */
@@ -65,6 +57,14 @@ public class ObjectFactory {
      */
     public TradePrice createTradePrice() {
         return new TradePrice();
+    }
+
+    /**
+     * Create an instance of {@link GetLastTradePricesResponse }
+     * 
+     */
+    public GetLastTradePricesResponse createGetLastTradePricesResponse() {
+        return new GetLastTradePricesResponse();
     }
 
     /**
