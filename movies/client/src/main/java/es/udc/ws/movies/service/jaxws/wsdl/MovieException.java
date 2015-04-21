@@ -16,6 +16,10 @@ public class MovieException
 {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -6104467002632817316L;
+	/**
      * Java type that goes as soapenv:Fault detail element.
      * 
      */
