@@ -18,7 +18,7 @@ public class IncorrectTickerSymbolException
     /**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 9028903746361416932L;
 	/**
      * Java type that goes as soapenv:Fault detail element.
      * 

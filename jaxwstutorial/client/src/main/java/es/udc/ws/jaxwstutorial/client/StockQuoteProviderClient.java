@@ -28,6 +28,7 @@ public class StockQuoteProviderClient {
             }
 
             String stockQuoteProviderURL = args[0];
+            System.out.println(stockQuoteProviderURL);
             List<String> tickerSymbols = new ArrayList<String>();
             for (int i = 1; i < args.length; i++) {
                 tickerSymbols.add(args[i]);

@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "StockQuoteProviderService", targetNamespace = "http://ws.adoo.udc.es/", wsdlLocation = "file:/D:/Surah/workspaces/Eclipse/workspaceADOO/ws-javaexamples-2.0.4/jaxwstutorial/service/target/jaxws/wsgen/wsdl/StockQuoteProviderService.wsdl")
+@WebServiceClient(name = "StockQuoteProviderService", targetNamespace = "http://ws.adoo.udc.es/", wsdlLocation = "file:/D:/Surah/workspaces/Eclipse/workspace-Practica-ADOO/ws-javaexamples/jaxwstutorial/service/target/jaxws/wsgen/wsdl/StockQuoteProviderService.wsdl")
 public class StockQuoteProviderService
     extends Service
 {
@@ -30,9 +30,9 @@ public class StockQuoteProviderService
         try {
             URL baseUrl;
             baseUrl = es.udc.ws.jaxwstutorial.wsdl.StockQuoteProviderService.class.getResource(".");
-            url = new URL(baseUrl, "file:/D:/Surah/workspaces/Eclipse/workspaceADOO/ws-javaexamples-2.0.4/jaxwstutorial/service/target/jaxws/wsgen/wsdl/StockQuoteProviderService.wsdl");
+            url = new URL(baseUrl, "file:/D:/Surah/workspaces/Eclipse/workspace-Practica-ADOO/ws-javaexamples/jaxwstutorial/service/target/jaxws/wsgen/wsdl/StockQuoteProviderService.wsdl");
         } catch (MalformedURLException e) {
-            logger.warning("Failed to create URL for the wsdl Location: 'file:/D:/Surah/workspaces/Eclipse/workspaceADOO/ws-javaexamples-2.0.4/jaxwstutorial/service/target/jaxws/wsgen/wsdl/StockQuoteProviderService.wsdl', retrying as a local file");
+            logger.warning("Failed to create URL for the wsdl Location: 'file:/D:/Surah/workspaces/Eclipse/workspace-Practica-ADOO/ws-javaexamples/jaxwstutorial/service/target/jaxws/wsgen/wsdl/StockQuoteProviderService.wsdl', retrying as a local file");
             logger.warning(e.getMessage());
         }
         STOCKQUOTEPROVIDERSERVICE_WSDL_LOCATION = url;
